@@ -2,9 +2,9 @@
   <header>
     <div class="content">
       <nav class="menu">
-        <a href="index.html" class="logo">
+      	<router-link to="/" class="logo">
           <img src="./../assets/logo.png" alt="Logo" class="logo-img">
-      </a>
+      	</router-link>
         <ul>
           <li> <router-link to="/">Finances</router-link></li>
           <li> <router-link to="/land-assets">Land Assets</router-link></li>
@@ -43,7 +43,7 @@ export default {
 
   nav {
     display: flex;
-      align-items: center;
+    align-items: center;
   }
 
   .menu ul {

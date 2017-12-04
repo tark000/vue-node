@@ -20,8 +20,7 @@
       <div class="flex-table-column" v-for="info in tableData">
         <div class="flex-table-cell" v-for="value, key in info">
           <span v-if="!showConvert(key)">{{convert(value)}}</span>
-          <input v-model="info[key]" :type="key != 'numberAcres' ? 'text' : 'number'" v-if="key != 'inputCosts'">
-          <input v-model="info[key]" type="text" disabled v-if="key == 'inputCosts'">
+          <input v-model="info[key]" :type="key != 'numberAcres' ? 'text' : 'number'">
         </div>
       </div>
 
@@ -79,7 +78,7 @@ export default {
   .flex-table {
     display: flex;
     justify-content: space-between;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
   .flex-table-column {
     display: flex;
@@ -117,4 +116,5 @@ export default {
   .flex-table-cell input, .flex-table-cell select {
     max-width: 100%;
   }
+
 </style>

@@ -18,23 +18,23 @@ const actions = {
     Api().get('currencies').then((response) =>{
       commit('SET_CURRENCIES_LIST', response.data )
     }, (err) => {
-      console.log(err)
+      alert(err)
     })
   },
   GET_TABLE ({commit}, name) {
     Api().get('/get-table?name=' + name).then((response) =>{
       commit('SET_TABLE', {data: response.data, name: name} )
     }, (err) => {
-      console.log(err)
+      alert(err)
     })
   },
   SAVE_TABLE ({commit}, name) {
     let obj = {}
     obj[name] = {table: this.state[name]}
     Api().post('/save-table', obj).then((response) =>{
-      console.log(response.data)
+      alert(response.data)
     }, (err) => {
-      console.log(err)
+      alert(err)
     })
   }
 }

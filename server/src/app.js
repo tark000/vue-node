@@ -42,3 +42,4 @@ app.post('/save-table', (req, res) => {
 })
 
 app.listen(process.env.PORT || 8083)
+console.log('Listen port ' + (process.env.PORT || 8083))
