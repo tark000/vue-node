@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<currencies>
+	<currency><symbol>CLP</symbol><name>Chile Pesos</name><rate>662.7245445201</rate></currency>
+	<currency><symbol>CNY</symbol><name>China Yuan Renminbi</name><rate>6.7976355259</rate></currency>
+	<currency><symbol>EUR</symbol><name>Euro</name><rate>0.8792304208</rate></currency>
+	<currency><symbol>INR</symbol><name>India Rupees</name><rate>64.7732976170</rate></currency>
+	<currency><symbol>USD</symbol><name>United States Dollars</name><rate>1.0000000000</rate></currency>
+<currencies>
